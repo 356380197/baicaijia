@@ -1,0 +1,477 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: #eee;
+}
+
+/*头部*/
+.header {
+	float: left;
+	width: 100%;
+}
+.title {
+	width: 100%;
+	height: 60px;
+	background: #f07e9f;
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+}
+.title p { 
+	line-height: 30px;
+	padding:  15px 0;
+}
+.title b {
+	margin-left: 30px;
+} 
+.title a {
+	font-size: 14px;
+	color: #fff;
+	margin-right: 15px;
+	float: right;
+}
+.title img { 
+	height: 25px;
+	float: left;
+	margin: 3px 0 0 20px;
+	width: auto;
+}
+.title input {
+	background: #fff url(../images/search_1.png) 10px center no-repeat;
+	width: 66%;
+	border: 1px solid #fff;
+	height: 38px;
+	margin-left: 5%;
+	margin-top: -6px;
+	font-size: 14px;
+	color: #333;
+	text-indent: 40px;
+}
+.container {
+	width: 100%;
+	float: left;
+}
+.sort {
+	display: none;
+}
+.sort ul {
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	line-height: 60px;
+	background: #fff;
+}
+.sort ul li {
+	position: relative;
+	text-align: center;
+	float: left;
+	width: 50%;
+	margin-bottom: -1px;
+}
+.sort ul li a {
+	font-size: 18px;
+	color: #333;
+}
+.sort ul li img {
+	margin: -5px 0 0 10px;
+	display: inline;
+	width: auto;
+}
+.sort ul li.fq {
+	border-bottom: 3px solid #f07e9f;
+}
+.sort ul li.fl a {
+	color: #f07e9f;
+}
+.sub_menu,.sub_menu1 {
+	background: #eee;
+	display: none;
+	position: absolute;
+	width: 50%;
+	top: 125px;
+}
+.sub_menu1 {
+	right: 0;
+}
+.sum a {
+	text-align: center;
+	width: 100%;
+	font-size: 18px;
+	display: block;
+	background: #eee;
+	color: #333;
+}
+.sum a.fy {
+	background: #fff;
+	color: #f07e9f;
+}
+.sum1_left .level_menu {
+	left: 0;
+}
+.sum1_right .level_menu {
+	right: 0;
+}  
+.level_menu {
+	display: none;
+	position: absolute;
+	width: 50%;
+	top: 125px;
+	background: #fff;
+}
+.sum1 a {
+	display: block;
+	width: 90%;
+	margin-left: 10%;
+	border-bottom: 1px solid #ccc;
+	background: #fff;
+	color: #333;
+	text-align: center;
+	font-size: 18px;
+}
+.sum1 a.fk {
+	color: #f07e9f;
+	border-bottom: 1px solid #f07e9f;
+}
+.sum1 a.fp {
+	border-bottom: none;
+}
+.list {
+	padding: 10px;
+}
+.list dl.fl {
+	margin: 10px 0;
+}
+.list dl {
+	background: #fff;
+	float: left;
+	padding: 20px 0;
+	margin-bottom: 10px;
+	width: 100%;
+}
+.list dl dt {
+	float: left;
+	width: 50%;
+}
+.list dl dt img {
+	width: 120px;
+	height: 120px;
+	margin: auto;
+}
+.list dl dd {
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+.list dl dd a,.list dl dd i,.list dl dd b {
+	float: left;
+	width: 100%;
+	margin-top: 10px;
+}
+.list dl dd a {
+	color: #333;
+	font-size: 14px;
+	font-weight: 600;
+}
+.list dl dd b {
+	color: #666;
+}
+.list dl dd em {
+	font-size: 14px;
+}
+.list dl dd i {
+	font-size: 30px;
+	color: #f07e9f;
+}
+.list {
+	padding: 0 10px;
+}
+.list dl.fk {
+	margin: 10px 0 0 0;
+}
+.list dl.fk {
+	background: #fff;
+	float: left;
+	padding: 20px 0;
+	width: 100%;
+}
+.list dl.fk dt {
+	width: auto;
+	float: left;
+	margin: 0 15px;
+}
+.list dl.fk dt img {
+	width: 90px;
+	height: 90px;
+	margin: auto;
+}
+.list dl.fk dd {
+	float: left;
+	width: 60%;
+}
+.list dl.fk dd a {
+	float: left;
+	width: 100%;
+	color: #f07e9f;
+	float: left;
+	font-size: 20px;
+	text-align: left;
+	font-weight: normal;
+}
+.list dl.fk dd span {
+	width: 70px;
+	height: 25px;
+	line-height: 25px;
+	float: right;
+	text-indent: 25px;
+	font-size: 16px;
+	color: #666;
+	margin-right: 10px;
+	background: url(../images/icon.png) left center no-repeat;
+}
+.list dl.fk dd img {
+	margin-bottom: 18px;
+	height: 20px;
+	width: 100px;
+	display: block;
+} 
+.list dl.fk dd b {
+	margin: 0 10px 0 0;
+	font-size: 14px;
+	width: auto;
+	color: #666;
+}
+.list dl.fk dd em {
+	font-size: 14px;
+}
+.list ol {
+	float: left;
+	padding: 0 10px;
+	background: #fff;
+}
+.list ol li {
+	padding-top: 10px;
+	float: left;
+	width: 100%;
+	line-height: 20px;
+	font-size: 14px;
+}
+.list ol li a {
+	display: block;
+}
+.list ol li.fl {
+	height: 40px;
+	overflow: hidden;
+	border-top: 1px solid #ccc;
+}
+.list ol li.fy {
+	background: #fff;
+	position: relative;
+}
+.list ol li img {
+	margin: auto;
+	width: 20px;
+	margin-bottom: 10px;
+}
+.list p {
+	width: 100%;
+	float: left;
+	margin: 10px 0;
+	background: #fff;
+	padding: 15px 0;
+}
+.list p img {
+	margin: 0 5px 0 12px;
+	height: 20px;
+	float: left;
+	width: auto;
+}
+.list p span {
+	line-height: 18px;
+	font-size: 16px;
+	float: left;
+}
+.list p b {
+	float: right;
+}
+.comment {
+	width: 100%;
+	float: left;
+	background: #fff;
+	margin-top: 10px;
+}
+.comment ul {
+	border-bottom: 1px solid #ccc;
+}
+.comment ul,.comment ol,.comment dl,.comment dl dt {
+	width: 100%;
+	float: left;
+}
+.comment ul li {
+	width: 33.3%;
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	padding:  20px 0;
+}
+.comment ul li.fl {
+	margin-bottom: -1px;
+	border-bottom: 3px solid #f07e9f;
+}
+.comment ul li a {
+	color: #333;
+}
+.comment ul li a b {
+	margin-left: 3px;
+}
+.comment ul li.fl a {
+	color: #f07e9f;
+}
+.comment ol li b {
+	display: block;
+	text-align: center;
+	color: #999;
+	font-size: 18px;
+}
+.comment ol li img {
+	position: relative;
+	left: 50%;
+	width: 140px;
+	margin: 65px 0 15px -70px;
+}
+.comment dl {
+	border-bottom: 1px solid #ccc;
+	padding: 20px 0;
+}
+.comment dl dt span,.comment dl dt em {
+	display: block;
+}
+.comment dl dt span {
+	margin: 10px 0 2px 0;
+}
+.comment dl dt a {
+	color: #999;
+	font-size: 14px;
+}
+.comment dl dt b {
+	margin: -25px 10px 0 0;
+	font-size: 16px;
+	color: #ffa062;
+	float: right;
+}
+.comment dl dt b.fl {
+	color: #99ce7e;
+}
+.comment dl dt b.fy {
+	color: #999;
+}
+.comment dl dt img {
+	height: 50px;
+	margin: 0 5px 0 12px;
+	width: auto;
+	float: left;
+}
+.comment dl dd {
+	margin-left: 65px;
+	line-height: 20px;
+	font-size: 14px;
+}
+/*弹出层*/
+.popup {
+	display: none;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	opacity: 0.5;
+	position: relative;
+}
+.hint {
+	display: none;
+	width: 100%;
+	position: absolute;
+	top: 35%;
+	background: #fff;
+}
+.hint dl {
+	width: 100%;
+	float: left;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	color: #f07e9f;
+	line-height: 24px;
+}
+.hint dl dt {
+	width: 100%;
+	float: left;
+	padding: 10px 0;	
+	border-top: 1px solid #ccc;
+}
+.hint dl dt a {
+	width: 23%;
+	float: left;
+}
+.hint dl dt a b {
+	text-align: right;
+	width: 100%;
+	display: block;
+	float: left;
+}
+
+.hint dl dt a img {
+	float: right;
+	width: 50px;
+	height: 50px;
+}
+.hint dl dd {
+	float: left;
+	width: 100%;
+	border-top: 1px solid #ccc;
+	color: #333;
+	line-height: 50px;
+}
+.hint dl dd a {
+	color: #333;
+}
+.hint dl dd a.fl {
+	width: 50%;
+	border-right: 1px solid #ccc;
+}
+.sc_h {
+	display: none;
+}
+.succeed {
+	position: absolute;
+	margin: -18px 0 0 -62px;
+	left: 50%;
+	top: 50%;
+}
+.succeed a {
+	display: none;
+	color: #fff;
+	font-size: 14px;
+	box-shadow: 0px 10px 15px #666;
+	border-radius: 5px;
+	padding: 10px 20px;
+	background: #000;
+}
+.succeed a.fl {
+	float: none;
+}
+@media (min-width:321px){
+	.list dl.fk dd {
+		float: left;
+		width: 66%;
+	}
+}
+@media (min-width:410px){
+	.list dl.fk dd {
+		float: left;
+		width: 69%;
+	}
+}
+@media (min-width:800px){
+	.list ol {
+		width: 99%;
+	}
+}

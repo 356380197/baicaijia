@@ -1,0 +1,410 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: #eee;
+	overflow: hidden;
+}
+
+/*头部*/
+.header {
+	float: left;
+	width: 100%;
+}
+.title {
+	width: 100%;
+	height: 60px;
+	background: #f07e9f;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+}
+.title p { 
+	line-height: 30px;
+	padding:  15px 0;
+}
+.title b {
+	margin-left: 40px;
+} 
+.title a {
+	font-size: 14px;
+	color: #fff;
+	margin-right: 15px;
+	float: right;
+}
+.title img { 
+	height: 22px;
+	float: left;
+	margin: 3px 0 0 20px;
+	width: auto;
+}
+.title input {
+	background: #fff url(../images/search_1.png) 10px center no-repeat;
+	width: 66%;
+	border: 1px solid #fff;
+	height: 38px;
+	margin-left: 5%;
+	margin-top: -6px;
+	background-size: 10%;
+	font-size: 14px;
+	color: #333;
+	text-indent: 40px;
+}
+.banner img {
+	width: 100%;
+}
+.container {
+	width: 100%;
+	float: left;
+}
+.price {
+	float: left;
+	width: 100%;
+	background: #fff;
+	padding: 20px 0;
+}
+.price dl {
+	padding: 0 20px;
+}
+.price dt {
+	float: right;
+	color: #ffa062;
+	font-size: 16px;
+	margin-top: 18px;
+}
+.price dd {
+	float: left;
+	width: 50%;
+}
+.price dd a,.price dd b {
+	float: left;
+	width: 100%;
+}
+.price dd b {
+	font-size: 14px;
+}
+.price dd a {
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: #f07e9f;
+}
+.price dd i {
+	font-size: 30px;
+}
+.menu {
+	overflow: hidden;
+	float: left;
+}
+.menu p {
+	float: left;
+	padding: 0 20px;
+	margin: 12px 0;
+	font-size: 16px;
+	color: #999;
+}
+.container ul {
+	float: left;
+	padding: 18px;
+	background: #fff;
+}
+.container ul.fl {
+	margin-bottom: 18px;
+	width: auto;
+}
+.container ul li {
+	color: #333;
+	width: 100%;
+	float: left;
+}
+.container ul li.fk {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+	color: #f07e9f;
+}
+.container ul li {
+	line-height: 20px;
+	color: #333;
+	float: left;
+	width: 100%;
+	font-size: 14px;
+}
+.container ul li img {
+	width: auto;
+	float: left;
+	margin:  0 5px;
+}
+.container ul li b,.container ul li span {
+	width: 50%;
+	float: left;
+	margin-top: 10px;
+	line-height: 20px;
+	font-size: 14px;
+	color: #333;
+}
+.container ul li.fq {
+	border-bottom: 3px solid #f07e9f;
+}
+.container ul li.fl a {
+	color: #f07e9f;
+}
+.container ol {
+	float: left;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 20px;
+}
+.container ol li {
+	width: 100%;
+	float: left;
+	margin-left: 18px;
+	padding: 14px 0;
+	line-height: 20px;
+	font-size: 14px;
+	border-bottom: 1px solid #ccc;
+}
+.container ol li.fy {
+	padding-bottom: 5px;
+	border-bottom: none;
+}
+.container ol li a {
+	float: left;
+}
+.container ol li b {
+	background: url(../images/arrows_r.png) no-repeat center right;
+	float: right;
+	margin-right: 30px;
+	padding-right: 20px;
+}
+.container ol li b.fl {
+	width: 50%;
+	height: 40px;
+	overflow: hidden;
+	margin-top: -10px;
+}
+.container ol li i {
+	float: left;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background: #f07e9f;
+	margin-right: 10px;
+	text-align: center;
+	color: #fff;
+}
+.footer {
+	width: 100%;
+	float: left;
+}
+.footer p {
+	color: #fff;
+	background: #f07e9f;
+	text-align: center;
+	font-size: 20px;
+	padding: 20px 0;
+	width: 100%;
+}
+
+/*弹出层*/
+.popping {
+	display: none;
+	height: 770px;
+	width: 100%;
+	background: #000;
+	opacity: 0.5;
+	position: relative;
+}
+.date {
+	display: none;
+	width: 100%;
+	position: absolute;
+	top: 670px;
+	background: #fff;
+}
+.date ul {
+	float: left;
+	width: 100%;
+	padding: 8px 0;
+	background: #eee;
+	border-bottom: 1px solid #ccc;
+}
+.date ul li {
+	text-align: center;
+	width: 16%;
+	float: left;
+}
+.date ul li a {
+	margin: auto;
+	color: #fff;
+	padding: 12px 0;
+	font-size: 14px;
+	display: block;
+	background: #f07e9f;
+	border-radius: 8px;
+}
+.date ul li.fl {
+	width: 10%;
+}
+.date ul li.fk {
+	width: 12%;
+	margin: 0 2%;
+}
+.date ul li img {
+	margin: 12px auto;
+	width: 11px;
+	height: 20px;
+}
+.date ul li b {
+	display: block;
+	font-size: 16px;
+	line-height: 24px;
+}
+.date ul li span {
+	font-size: 12px;
+	color: #666;
+}
+.date ol {
+	width: 100%;
+	float: left;
+}
+.date ol li {
+	width: 25%;
+	float: left;
+	padding: 1px 0;
+	border: 1px solid #ccc;
+	background: #f07e9f;
+	margin: -1px 0 0 -3px;
+}
+.date ol li.fl {
+	margin-left: 0;
+	padding-left: 1px;
+}
+.date ol li a,.date ol li b {
+	margin-left: 5px;
+	display: block;
+	line-height: 24px;
+	font-size: 16px;
+	color: #fff;
+}
+.date ol li b {
+	margin-right: 5px;
+	font-size: 16px;
+	text-align: right;
+}
+.popup {
+	display: none;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	opacity: 0.5;
+	position: relative;
+}
+.hint {
+	display: none;
+	width: 100%;
+	position: absolute;
+	top: 35%;
+	background: #fff;
+}
+.hint dl {
+	width: 100%;
+	float: left;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	color: #f07e9f;
+	line-height: 24px;
+}
+.hint dl dt {
+	width: 100%;
+	float: left;
+	padding: 10px 0;	
+	border-top: 1px solid #ccc;
+}
+.hint dl dt a {
+	width: 23%;
+	float: left;
+}
+.hint dl dt a b {
+	text-align: right;
+	width: 100%;
+	display: block;
+	float: left;
+}
+
+.hint dl dt a img {
+	float: right;
+	width: 50px;
+	height: 50px;
+}
+.hint dl dd {
+	float: left;
+	width: 100%;
+	border-top: 1px solid #ccc;
+	color: #333;
+	line-height: 50px;
+}
+.hint dl dd a {
+	color: #333;
+}
+.hint dl dd a.fl {
+	width: 50%;
+	border-right: 1px solid #ccc;
+}
+.sc_h {
+	display: none;
+}
+.succeed {
+	position: absolute;
+	margin: -18px 0 0 -62px;
+	left: 50%;
+	top: 50%;
+}
+.succeed a {
+	display: none;
+	color: #fff;
+	font-size: 14px;
+	box-shadow: 0px 10px 15px #666;
+	border-radius: 5px;
+	padding: 10px 20px;
+	background: #000;
+}
+.succeed a.fl {
+	float: none;
+}
+
+
+
+
+@media (min-width:321px){
+	.list dl dd {
+		float: left;
+		width: 66%;
+	}
+}	
+@media (max-width:321px){
+	.title img,.title b {
+		margin-left: 10px;
+	}
+	.title a {
+		margin-right: 10px;
+	}
+	.date {
+		top: 655px;
+	}
+}
+@media (min-width:410px){
+	.list dl dd {
+		float: left;
+		width: 69%;
+	}
+}
+@media (max-width:375px){
+	.container ul li b,.container ul li span {
+		font-size: 12px;
+	}
+}
+@media (min-width:730px){
+	.container ul {
+		width: 100%;
+	}
+}
